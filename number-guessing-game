@@ -1,0 +1,22 @@
+import random
+
+secret_numer = random.randint(1, 100)
+attempts = 0
+max_attempts = 10
+
+print("I'm thinking of a number between 1 and 100. You have 10 attempts to guess it.")
+
+while attempts < max_attempts:
+    guess = int(input("Guess the number: "))
+    attempts += 1
+
+    if guess == secret_numer:
+        print("Congratulations, you guessed it in", attempts, "attempts!")
+        break
+    elif guess < secret_numer:
+        print("Nice Try!")
+    else:
+        print("Nice Try!")
+
+if attempts == max_attempts:
+    print("Sorry, you didn't guess the number in time. The number was", secret_numer)
