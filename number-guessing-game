@@ -13,8 +13,6 @@ while attempts < max_attempts:
     if guess == secret_numer:
         print("Congratulations, you guessed it in", attempts, "attempts!")
         break
-    elif guess < secret_numer:
-        print("Nice Try!")
     else:
         print("Nice Try!")
 
